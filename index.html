@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenmo Lookup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Zenmo Shop Lookup</h1>
+    <p class="subtitle">Browse and search products from <a href="https://www.zenmo.shop" target="_blank" rel="noopener">zenmo.shop</a></p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search products…"
+        autocomplete="off"
+      />
+      <select id="type-filter">
+        <option value="">All categories</option>
+      </select>
+    </div>
+
+    <p id="status" class="status">Loading products…</p>
+
+    <div id="product-grid" class="product-grid"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
